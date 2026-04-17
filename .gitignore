@@ -52,3 +52,5 @@ build/
 *.iml
 *.iws
 *.ipr
+
+src/resources/*.mp4
