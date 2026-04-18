@@ -1,0 +1,13 @@
+package core;
+
+public enum State {
+    UPLOADED,
+    INGESTED,
+    ANALYZED,
+    VISUALS_PROCESSED,
+    AUDIO_PROCESSED,
+    COMPLIANCE_CHECKED,
+    PACKAGED,
+    COMPLETED,
+    FAILED
+}
