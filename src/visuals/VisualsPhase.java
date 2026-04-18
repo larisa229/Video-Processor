@@ -1,20 +1,21 @@
-package analysis;
+package visuals;
 
 import core.*;
+
 import java.util.List;
 
-public class AnalysisPhase {
+public class VisualsPhase {
     public void run(Workflow wf) throws StageException {
         List<PipelineStage> stages = List.of(
-                new IntroOutroDetector(),
-                new CreditRoller(),
-                new SceneIndexer()
+                new SceneComplexity(),
+                new Transcoder(),
+                new SpriteGenerator()
         );
 
         for(PipelineStage stage : stages) {
             stage.execute(wf);
         }
 
-        System.out.println("Analysis phase complete");
+        System.out.println("Visuals phase complete");
     }
 }

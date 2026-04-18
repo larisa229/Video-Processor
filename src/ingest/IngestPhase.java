@@ -14,6 +14,6 @@ public class IngestPhase {
         for (PipelineStage stage : stages) {
             stage.execute(wf);
         }
-        System.out.println("Ingest phase complete -> " + wf.getState());
+        System.out.println("Ingest phase complete");
     }
 }
